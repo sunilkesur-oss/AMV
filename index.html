@@ -599,6 +599,7 @@ if ("serviceWorker" in navigator) addEventListener("load", () => navigator.servi
 #amor button.cerrar{font:inherit;font-size:16px;font-weight:600;color:#fff;border:0;border-radius:999px;padding:13px 30px;cursor:pointer;
   background:linear-gradient(135deg,#ec6a8f,#c9356a);box-shadow:0 8px 20px rgba(201,53,106,.35)}
 #amor button:focus-visible,#amor button:focus{outline:2px solid #f3a3ba;outline-offset:3px}
+#amor .firma{font-family:var(--display,Georgia,serif);font-style:italic;font-size:18px;color:#b4486c;margin-top:24px;letter-spacing:.3px}
 #amor button.cerrar:active{transform:scale(.97)}
 #amor button.x{position:absolute;top:12px;right:14px;width:36px;height:36px;border:0;border-radius:50%;background:transparent;
   color:#c98aa0;font-size:24px;line-height:1;cursor:pointer}
@@ -622,7 +623,8 @@ if ("serviceWorker" in navigator) addEventListener("load", () => navigator.servi
     o.innerHTML = '<div class="carta"><button class="x" aria-label="Cerrar">\u00d7</button>' +
       '<span class="latido" aria-hidden="true">\u2665</span>' +
       '<h2>Hola mi amor,</h2><span class="linea"></span><p>Te amo mucho!</p>' +
-      '<button class="cerrar">\u2665 Cerrar</button></div>';
+      '<button class="cerrar">\u2665 Cerrar</button>' +
+      '<div class="firma">Suni \u2764\ufe0f Maria</div></div>';
     for (var i = 0; i < 18; i++) {
       var h = document.createElement("span");
       h.className = "flota";
